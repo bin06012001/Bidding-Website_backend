@@ -1,0 +1,135 @@
+*
+
+
+{
+
+margin: 0px;	
+outline: 0px;
+padding: 0px;
+
+}
+
+
+#logo
+{
+
+display:block;
+height: 200px;
+width: 200px;	
+	
+}
+
+	
+.add_buyer, .add_buyer_form, .add_item_form, .delete_buyer_form, .delete_item_form, .login_form, .relogin_form
+
+{
+ 
+	margin-left: 500px;
+
+}
+
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #04AA6D;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+input[type=text] {
+  background-color: #3CBC8D;
+  color: white;
+}
+  
+
+
+.label
+{
+        
+	display: inline-block;
+        font-weight: bold;
+	width: 130px;
+	
+}	
+   
+  .text, .password
+  {
+
+  margin-top: 10px;	
+	
+  } 
+
+ 
+ 
+.submit
+{
+	margin-top: 5px;
+}
+	.logout
+	{
+ 
+height: 40px;
+	width: 7.5%;
+position: absolute;
+top: 0px;
+right: 0px;	
+	}
+	
+	.button {
+box-shadow: 3px 3px 5px grey;
+	  font: bold 11px Arial;
+	  text-decoration: none;
+	  text-align: center;
+	  background-color: #EEEEE;
+	  color: #333333;
+	  padding: 20px 6px 6px;
+	  border-top: 1px solid #CCCCCC;
+	  border-right: 1px solid #333333;
+	  border-bottom: 1px solid #333333;
+	  border-left: 1px solid #CCCCCC;
+	}
+ 
+.item
+{
+	border: 3px solid seagreen;
+        font-weight: bold;
+	display: inline-block;
+	margin: 10px;
+	width: 200px;
+}
+.item_row
+{	border-top: 2px solid seagreen;
+ 
+	width: 100%;
+}
+
+
+
+.item_img
+{
+	
+	height: 150px;
+	width: 150px;
+}
+
+
+.link
+{
+	text-decoration: none;
+	color: seagreen;
+}
+
+	#exit_title
+	{
+
+position:absolute;		
+left: 35%;
+top: 20%;		
+	}
+
+ 
