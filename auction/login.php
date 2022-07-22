@@ -46,7 +46,7 @@ div {
  <link rel="stylesheet" type="text/css" href="style.css">
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body style="background-color:#A9F5BC;">
+<body>
 
 <ul>
   <li><a href="add_buyer.php">Back</a></li>
@@ -59,9 +59,10 @@ div {
 echo "<img src='auction_logo.png' id='logo'>";
 echo "<br>";
 echo "<form action='check_login.php' class='login_form' method='POST'>";
+echo "<div class='box'>";
+echo "<div class='container'>";
 echo "<h3> Please Login...</h3>";
 
-echo "<div>";
 echo "<label for='username' class='label'> Username:</label>";
 echo "<input class='text' type='text' name='username' placeholder='Username'>";
 echo "<br>";

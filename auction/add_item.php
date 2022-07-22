@@ -38,6 +38,7 @@ div {
   border: 5px solid seagreen;
   margin: 0;
 }
+
 </style>
 	
 
@@ -48,9 +49,10 @@ div {
 </head>
 
 
-<body style="background-color:#A9F5BC;">
+<body>
 
 <ul>
+
   <li><a href="add_buyer.php">Back</a></li>
   
 </ul>
@@ -61,16 +63,19 @@ echo "<br>";
 
 echo "<form class='add_item_form' action='check_item.php' method='POST'  enctype='multipart/form-data'>";
 
-echo "<div>";
+echo "<div class='box'>";
+echo "<div class='container'>";
+
+
 if(isset($_GET["item"]))
 {
 
 if($_GET["item"]=="duplicate")
+
 {
 	echo "<h4>Already entered this item</h4>";
 	echo "<br>";
 	echo "<h4>Please try again</h4>";
- 
 }
 
 else if($_GET["item"]=="successful")
@@ -84,6 +89,7 @@ else
 {
 echo "<h4>Please add an item</h4>";
 }
+
 
 echo "<label for='item_name' class='label'>Item Name:</label>";
 echo "<input class='text'  type='text' name='item_name'>";

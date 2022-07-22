@@ -35,7 +35,7 @@ $stmt = $conn->prepare($statement);
 $stmt->bind_param("s", $iname);
 $stmt->execute();
 $result = $stmt->get_result();
-/*grab from table all see if there is an item of same name*/
+                                                 /*grab from table all see if there is an item of same name*/
 if($result->num_rows>=1)
 {
 $value = "duplicate";
@@ -52,14 +52,14 @@ $stmt->execute();
 $value = "successful";
 $conn->close();
 header("Location:add_item.php?item=$value");
-}/*insert into table if item name not duplicate */
+}                                                 /*insert into table if item name not duplicate */
 
 }
 
 else
 {
 header("Location:add_item.php");
-}/*verify user not directly accessing */
+}                                                  /*verify user not directly accessing */
  
  
 ?>

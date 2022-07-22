@@ -3,7 +3,7 @@
 
 	 <link rel="stylesheet" type="text/css" href="style.css">
 </head> 
-<body style="background-color:#A9F5BC;">
+<body>
 <?php
 
 
@@ -26,7 +26,7 @@ die("Connection failed!".$conn->connect_error);
 
 $username = $_POST["username"];
 $password = $_POST["password"];
-$hashed = password_hash($password, PASSWORD_DEFAULT);
+$hashed = password_hash($password, PASSWORD_DEFAULT); 
 
 
 $statement = "SELECT * FROM buyer WHERE username=?";
@@ -50,7 +50,7 @@ $stmt->execute();
 
 $value = "successful";
 header("Location: add_buyer.php?buyer=$value"); 
-} /*verify if there is a duplicate user */
+}                                                     /*verify if there is a duplicate user */
 
 $conn->close();
 } 
@@ -58,7 +58,7 @@ $conn->close();
 else
 {
 header("Location: add_buyer.php");
-} /*verify user not directly accessing this page */
+}                                       /*verify user not directly accessing this page */
 
 ?>
 </body>

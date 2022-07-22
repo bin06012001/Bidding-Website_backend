@@ -42,17 +42,18 @@ div {
 }
 
 
-
 </style>
 
 
 
  <link rel="stylesheet" type="text/css" href="style.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
 
 </head>
-<body style="background-color:#A9F5BC;">
+<body>
+
+
 
 
 
@@ -66,11 +67,16 @@ div {
 </ul>
 
 
+
 <?php
 
 echo "<img src='auction_logo.png' id='logo'/>";
 echo "<br>";
+
+
 echo "<form class='add_buyer_form' action='check_buyer.php' method='POST'>";
+echo "<div class='box'>";
+echo "<div class='container'>";
 
 if(isset($_GET["buyer"]))
 {
@@ -87,16 +93,14 @@ else if($_GET["buyer"]=="duplicate")
  
 }
 
-
-
 }
+
  
 else
 {
 echo "<h4 >Please Add The Buyer's Username and Password</h4>";
 }
 
-echo "<div>";
 
 
 echo "<label style=background:'white' for='username' class='label' > Username:</label>";
@@ -111,6 +115,7 @@ echo "<br>";
 echo "<input class='submit' type='submit' value='Add Buyer'/>";	
 echo "</form>";
 
+echo "</div>";
 echo "</div>";
 
 ?>

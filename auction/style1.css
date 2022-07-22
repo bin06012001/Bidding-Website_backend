@@ -1,0 +1,45 @@
+*
+{
+margin:0;
+padding:0;
+}
+
+
+body{
+background:url(https://img.freepik.com/free-vector/auctioneer-with-hammer-selling-artwork-stage-buyers-holding-signs-with-offers-flat-vector-illustration-auction-trade-bidding_74855-13015.jpg?w=996&t=st=1657746507~exp=1657747107~hmac=bbb4880f7a16a145f669142cf605c1bccd216c6cfe9500a348fa836c60f005a4);
+width:100%;
+height:100vh;
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.box{
+position:relative;
+width:400px
+height:400px;
+background:transparent;
+border:1px solid seagreen;
+border-top-left-radius:20px;
+border-bottom-right-radius:20px;
+}
+
+.box:before{
+content: '';
+position:absolute;
+width:100%
+height:100%;
+background:rgba(0,0,0,.5);
+border-top-left-radius:20px;
+border-bottom-right-radius:20px;
+z-index:-1;
+}
+
+.box h1
+{
+text-allign:center;
+line-height:400px;
+color:seagreen;
+}

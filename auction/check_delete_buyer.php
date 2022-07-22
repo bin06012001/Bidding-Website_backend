@@ -3,7 +3,7 @@
 
 	 <link rel="stylesheet" type="text/css" href="style.css">
 </head> 
-<body style="background-color:#A9F5BC;">
+<body>
 <?php
 if(!empty($_POST["username"]) && !empty($_POST["password"]))
 {
@@ -34,7 +34,7 @@ header("Location:delete_buyer.php?buyer=$value");
 
 else
 {
-$row = $result->fetch_assoc();
+$row = $result->fetch_assoc();     /* This query is used to fetch the data from the database table*/
 
 if(password_verify($password, $row["password"]))
 {

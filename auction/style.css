@@ -8,7 +8,28 @@ outline: 0px;
 padding: 0px;
 
 }
+body{
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.5),rgba(0,0,0,.5)),url(https://img.freepik.com/free-vector/auctioneer-with-hammer-selling-artwork-stage-buyers-holding-signs-with-offers-flat-vector-illustration-auction-trade-bidding_74855-13015.jpg?w=996&t=st=1657746507~exp=1657747107~hmac=bbb4880f7a16a145f669142cf605c1bccd216c6cfe9500a348fa836c60f005a4);
+width:100%;
+height:100vh;
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+//display:flex;
+justify-content:center;
+align-items:center;
 
+}
+
+.container{
+
+width:500px;
+margin:auto;
+border:4px rgba(255,255,255,0.4);
+border-top-left-radius:20px;
+border-bottom-right-radius:20px;
+background-color: rgba(255,255,255,0.4);
+}
 
 #logo
 {
@@ -24,8 +45,8 @@ width: 200px;
 
 {
  
-	margin-left: 500px;
-
+	margin-left: 550px;
+	
 }
 
 
@@ -41,17 +62,52 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 
-input[type=text] {
-  background-color: #3CBC8D;
-  color: white;
+input[type=text],input[type=password] {
+
+  background:transparent;
+  color: black;
 }
   
+.box{
+position:relative;
+width:400px
+height:400px;
+background:transparent;
+border:4px rgba(255,255,255,0.3);;
+border-top-left-radius:20px;
+border-bottom-right-radius:20px;
+//opacity:0.5;
+}
+
+.box:before{
+content: '';
+position:absolute;
+width:100%
+height:100%;
+background:rgba(0,0,0,.3);
+backdrop-filter:blur(20px);
+border-top-left-radius:20px;
+border-bottom-right-radius:20px;
+z-index:-1;
+
+
+}
+
+.box label,h4
+{
+text-allign:center;
+line-height:50px;
+color: black;
+//opacity:0.25;
+}
 
 
 .label
 {
         
 	display: inline-block;
+	color: ;
+	font-size: 1.2rem;
         font-weight: bold;
 	width: 130px;
 	
@@ -59,8 +115,9 @@ input[type=text] {
    
   .text, .password
   {
-
-  margin-top: 10px;	
+  
+  margin-left:40px;	
+  margin-top: 1px;
 	
   } 
 
@@ -70,18 +127,22 @@ input[type=text] {
 {
 	margin-top: 5px;
 }
-	.logout
+
+.logout
 	{
- 
-height: 40px;
+ 	font-size: 5rem;
+	color:white;
+	height: 40px;
 	width: 7.5%;
-position: absolute;
-top: 0px;
-right: 0px;	
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background-color:grey;
+		
 	}
 	
-	.button {
-box-shadow: 3px 3px 5px grey;
+.button {
+	  box-shadow: 3px 3px 5px grey;
 	  font: bold 11px Arial;
 	  text-decoration: none;
 	  text-align: center;
@@ -96,14 +157,18 @@ box-shadow: 3px 3px 5px grey;
  
 .item
 {
-	border: 3px solid seagreen;
+	border: 3px solid black;
+	//border:4px rgba(255,255,255,0.4);
+	//border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	background-color: rgba(255,255,255,0.3);
         font-weight: bold;
 	display: inline-block;
 	margin: 10px;
 	width: 200px;
 }
 .item_row
-{	border-top: 2px solid seagreen;
+{	border-top: 2px solid black;
  
 	width: 100%;
 }
@@ -113,23 +178,25 @@ box-shadow: 3px 3px 5px grey;
 .item_img
 {
 	
-	height: 150px;
-	width: 150px;
+	height: 170px;
+	width: 200px;
 }
 
 
 .link
 {
 	text-decoration: none;
-	color: seagreen;
+	color: blue;
 }
 
-	#exit_title
-	{
 
-position:absolute;		
-left: 35%;
-top: 20%;		
+
+#exit_title
+	{
+	font-size: 5rem;
+	position:absolute;		
+	left: 25%;
+	top: 20%;		
 	}
 
  

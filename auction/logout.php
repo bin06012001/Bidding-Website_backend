@@ -3,7 +3,7 @@
 <link href="style.css" rel="stylesheet" type="text/css">
 	
 </head> 
-<body style="background-color:#A9F5BC;">
+<body>
 	
 
 <?php
@@ -12,7 +12,7 @@ if(isset($_SESSION["username"]))
 {
  
  
-$_SESSION = array();
+$_SESSION = array(); /* makes the seesion values NULL*/
  
   
 

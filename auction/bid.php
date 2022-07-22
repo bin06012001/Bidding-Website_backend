@@ -4,7 +4,7 @@
  <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
-<bodystyle="background-color:#A9F5BC;">
+<body>
 
 <?php
 echo "<img id='logo' src='auction_logo.png'/>";

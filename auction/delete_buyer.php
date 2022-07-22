@@ -44,8 +44,8 @@ div {
  <link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-	 </head>
-<body style="background-color:#A9F5BC;">
+</head>
+<body>
 
 <ul>
   <li><a href="add_buyer.php">Back</a></li>
@@ -55,11 +55,12 @@ div {
 <?php
 echo "<img src='auction_logo.png' id='logo'/>";
 echo "<br>";
-echo "<form class='delete_buyer_form' action='check_delete_buyer.php' method='POST'>";
+echo "<form class='delete_buyer_form' action='check_delete_buyer.php' method='POST'>";  
 
-echo "<div>";
+echo "<div class='box'>";
+echo "<div class='container'>";
 
-if(isset($_GET["buyer"]))
+if(isset($_GET["buyer"]))  
 {
 
 if($_GET["buyer"]=="no_account")

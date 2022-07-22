@@ -6,7 +6,7 @@
  
 </head>
 
-<body style="background-color:#A9F5BC;">
+<body>
 <?php 
 
 session_start();

@@ -8,7 +8,7 @@
 	 
  
 	
-<body style="background-color:#A9F5BC;">
+<body>
 <?php
  
 session_start();
@@ -24,7 +24,7 @@ header("Location:display_items.php");
 else
 {
 echo "<img src='auction_logo.png' id='logo'>";	
-echo "<a href='logout.php' class='logout button'>Logout </a>";
+echo "<a4 href='logout.php' class='logout button'>Logout </a4>";
 
 $username =	$_SESSION["username"];
 $DBHOST = "localhost";
@@ -80,7 +80,8 @@ echo "<option value='$j'>$$j</option>";
 echo "</select>";	
 echo "<input type='submit' value='Bid'>";
 echo "</form>";
-echo "</div>"; 
+echo "</div>";
+
  
 $conn->close(); /*display the item details */ 
  
